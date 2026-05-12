@@ -23,10 +23,17 @@ async function geti() {
 		_info[16] = XELITE.balanceOf(0x5C146cd18fa53914580573C9b9604588529406Ca);	//Development Reserve
 		return _info;
 		*/
-    maxSupply: 400_000_000 ,
-    circulatingSupply: 80_000_000 ,
-    totalSupply: 400_000_000,
-    burnedSupply: 0,
+	    maxSupply: 400_000_000 ,
+	    circulatingSupply: 80_000_000 ,
+	    totalSupply: 400_000_000,
+	    burnedSupply: 0,
+		others: {
+			old_elite_supply_api: {
+				endpoint_location: "/ftm1337"
+			}
+		}
+		
+
     /*
 			lastUpdateTimestamp:	Number("0x"+i.substr( 2+64*0 , 64 ))
 			, price:				Number("0x"+i.substr( 2+64*1 , 64 )) / 1e18
